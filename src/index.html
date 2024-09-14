@@ -6,15 +6,39 @@
     <link href="/dist/output.css"  rel="stylesheet" >
     <link rel="shortcut icon" href="/img/favicon.png" > 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <linkhref="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <title>پروژه تیلوین</title>
 </head>
 <body>
     <header class="bg-primaryColor fixed top-0 left-0 w-full z-50 " >
-        <nav class="container bg-red-700 max-w-5xl mx-auto p-6 md:bg-blue-700  lg:bg-green-700 lg:text-4xl" >
-            <a href="#">خانه</a>
-            <a href="#">درباره ما</a>
+        <nav class="container relative h-14 flex justify-between items-center" >
+            <div>
+                <a href="#" class="text-2xl uppercase font-oswald "  >
+                    همبر<span class="text-secondaryColor" >گرد</span>
+                </a>
+            </div>
+            
+            <div class="hidden absolute top-0 left-0 w-full py-14 bg-primaryColor border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto " id="nav-menu" >
+                <ul dir="rtl" class="flex flex-col text-center gap-5 md:flex-row " >
+                    <li><a href="#home" class="nav__link hover:text-secondaryColor ease-in duration-200 " >خانه</a></li>
+                    <li><a href="#about" class="nav__link hover:text-secondaryColor ease-in duration-200 " >درباره ما</a></li>
+                    <li><a href="#menu" class="nav__link hover:text-secondaryColor ease-in duration-200 " >منوی رستوران</a></li>
+                    <li><a href="#reviw" class="nav__link hover:text-secondaryColor ease-in duration-200 " >خلاصه</a></li>
+                    <li><a href="#contact" class="nav__link hover:text-secondaryColor ease-in duration-200 " >تماس با ما</a></li>
+                </ul>
+                <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden " id="nav-close"  >
+                    <i class="ri-close-line" ></i>
+                </div>
+            </div>
+            <div class="flex items-center gap-5 " >
+                <i class="ri-moon-line cursor-pointer ml-4 text-xl" ></i>
+                <div class="md:hidden" id="hamburger" >
+                    <i class="ri-menu-2-line  cursor-pointer text-xl " ></i>
+                </div>
+            </div>
+        </div>
         </nav>
     </header>
+    <script src="main.js" ></script>
 </body>
 </html>

@@ -11,7 +11,7 @@ module.exports = {
         colors: {
             primaryColor: '#010a5e',
             primaryColorLight:'#010a5e',
-            secondaryColor: 'FFCC00',
+            secondaryColor: '#FFCC00',
             paragraphColor:'#c0c0c0',
             wihteColor:'#fff',
             blackColor:'#000',
@@ -27,6 +27,11 @@ module.exports = {
             default: '1rem',
             sm: '1.5rem'
         }
+    }
+    ,
+    fontFamily :{
+      oswald :['Oswald','sans-serif'],
+      dmsans: ['DM Sans' , 'sans-serif']
     }
   },
   plugins: [],
