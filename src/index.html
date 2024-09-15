@@ -10,28 +10,28 @@
     <title>پروژه تیلوین</title>
 </head>
 <body>
-    <header class="bg-primaryColor fixed top-0 left-0 w-full z-50 " >
+    <header class="bg-secondaryColor fixed top-0 left-0 w-full z-50 border-b-2 " >
         <nav class="container relative h-14 flex justify-between items-center" >
             <div>
-                <a href="#" class="text-2xl uppercase font-oswald "  >
-                    همبر<span class="text-secondaryColor" >گرد</span>
+                <a href="#" class="text-xl uppercase font-oswald text-red-500 font-bold "  >
+                    فست فود<span class="text-primaryColor mr-2 ">مدرن </span>
                 </a>
             </div>
             
-            <div class="hidden absolute top-0 left-0 w-full py-14 bg-primaryColor border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto " id="nav-menu" >
+            <div class="hidden absolute top-0 left-0 w-full py-14 bg-secondaryColor border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto " id="nav-menu" >
                 <ul dir="rtl" class="flex flex-col text-center gap-5 md:flex-row " >
-                    <li><a href="#home" class="nav__link hover:text-secondaryColor ease-in duration-200 " >خانه</a></li>
-                    <li><a href="#about" class="nav__link hover:text-secondaryColor ease-in duration-200 " >درباره ما</a></li>
-                    <li><a href="#menu" class="nav__link hover:text-secondaryColor ease-in duration-200 " >منوی رستوران</a></li>
-                    <li><a href="#reviw" class="nav__link hover:text-secondaryColor ease-in duration-200 " >خلاصه</a></li>
-                    <li><a href="#contact" class="nav__link hover:text-secondaryColor ease-in duration-200 " >تماس با ما</a></li>
+                    <li><a href="#home" class="nav__link hover:text-primaryColor ease-in duration-200 " >خانه</a></li>
+                    <li><a href="#about" class="nav__link hover:text-primaryColor ease-in duration-200 " >درباره ما</a></li>
+                    <li><a href="#menu" class="nav__link hover:text-primaryColor ease-in duration-200 " >منوی رستوران</a></li>
+                    <li><a href="#reviw" class="nav__link hover:text-primaryColor ease-in duration-200 " >خلاصه</a></li>
+                    <li><a href="#contact" class="nav__link hover:text-primaryColor ease-in duration-200 " >تماس با ما</a></li>
                 </ul>
                 <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden " id="nav-close"  >
                     <i class="ri-close-line" ></i>
                 </div>
             </div>
             <div class="flex items-center gap-5 " >
-                <i class="ri-moon-line cursor-pointer ml-4 text-xl" ></i>
+                <i class="ri-moon-line cursor-pointer ml-4 text-xl text-black" ></i>
                 <div class="md:hidden" id="hamburger" >
                     <i class="ri-menu-2-line  cursor-pointer text-xl " ></i>
                 </div>
@@ -72,7 +72,50 @@
                 </div>
             </div>
         </section>
-
+        <section id="categoty"  >
+            <div class="container flex flex-col gap-5 md:flex-row "dir="rtl" >
+                <!-- card 1 -->
+                <div class="bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1"dir="ltr" >
+                    <div class="basis-1/3 relative" >
+                        <img src="../img/burger-1.png" alt="category" class="absolute w-28 -bottom-4 -left-4" >
+                    </div>
+                    <div>
+                        <div class="mb-2" >
+                            <h4 class="card__title  " >فست فود</h4>
+                            <p class="text-xs text-black text-center " >انواع همبرگر و  ساندویچ رو از اینجا انتخاب میکنید</p>
+                        </div>
+                        <a href="#" class="text-black cursor-pointer" > buy online </a>
+                    </div>
+                </div>
+                  <!-- card 2 -->
+                <div class="bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1" dir="ltr">
+                    <div class="basis-1/3 relative" >
+                        <img src="../img/snack-1.png" alt="category" class="absolute w-28 -bottom-4 -left-4" >
+                    </div>
+                    <div>
+                        <div class="mb-2" >
+                            <h4 class="card__title" >اسنک</h4>
+                            <p class="text-xs text-black text-center " >loteasdfasdasdfasdfasdfasdffasdf asdfalajsdf als.</p>
+                        </div>
+                        <a href="#" class="text-secondaryColor cursor-pointer" > buy online </a>
+                    </div>
+                </div>
+                    <!-- card 3 -->
+                <div class="bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1" dir="ltr" >
+                    <div class="basis-1/3 relative  " >
+                        <img src="../img/beverage-2.png" alt="category" class="absolute w-28 -bottom-4 -left-4" >
+                    </div>
+                    <div>
+                        <div class="mb-2"  >
+                            <h4 class="card__title" >اب میوه</h4>
+                            <p class="text-xs text-black text-center " >lote asdfalajsasdfasdasdfdf als.سشیبشسیبشسیب</p>
+                        </div>
+                        <a href="#" class="text-secondaryColor  cursor-pointer" > buy online </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
 
 
 
