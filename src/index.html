@@ -7,6 +7,10 @@
     <link rel="shortcut icon" href="/img/favicon.png" > 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>پروژه تیلوین</title>
 </head>
 <body>
@@ -23,7 +27,7 @@
                     <li><a href="#home" class="nav__link hover:text-primaryColor ease-in duration-200 " >خانه</a></li>
                     <li><a href="#about" class="nav__link hover:text-primaryColor ease-in duration-200 " >درباره ما</a></li>
                     <li><a href="#menu" class="nav__link hover:text-primaryColor ease-in duration-200 " >منوی رستوران</a></li>
-                    <li><a href="#reviw" class="nav__link hover:text-primaryColor ease-in duration-200 " >خلاصه</a></li>
+                    <li><a href="#review" class="nav__link hover:text-primaryColor ease-in duration-200 " >خلاصه</a></li>
                     <li><a href="#contact" class="nav__link hover:text-primaryColor ease-in duration-200 " >تماس با ما</a></li>
                 </ul>
                 <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden " id="nav-close"  >
@@ -202,10 +206,10 @@
                             </div>
                             <div class="pt-5" >
                                 <div class="mb-2" >
-                                    <h4 class="card__title">برگر متوسط</h4>
+                                    <h4 class="card__title">برگر مینی</h4>
                                     <p class="paragraph">نان برگر ، پنیر ، کاهو ، گوجه ، سبزی</p>
                                 </div>
-                                <p class="text-secondaryColor" >140,000 تومان</p>
+                                <p class="text-secondaryColor" >100,000 تومان</p>
                             </div>
                         </li>
                         <!-- 2 -->
@@ -215,10 +219,10 @@
                             </div>
                             <div class="pt-5" >
                                 <div class="mb-2" >
-                                    <h4 class="card__title">برگر متوسط</h4>
-                                    <p class="paragraph">نان برگر ، پنیر ، کاهو ، گوجه ، سبزی</p>
+                                    <h4 class="card__title">برگر بزرگ</h4>
+                                    <p class="paragraph">نان برگر ،تیکه های گوشت 80%، پنیر ، کاهو ، گوجه ، سبزی</p>
                                 </div>
-                                <p class="text-secondaryColor" >140,000 تومان</p>
+                                <p class="text-secondaryColor" >280,000 تومان</p>
                             </div>
                         </li>
                         <!-- 3 -->
@@ -228,10 +232,10 @@
                             </div>
                             <div class="pt-5" >
                                 <div class="mb-2" >
-                                    <h4 class="card__title">برگر متوسط</h4>
+                                    <h4 class="card__title">برگر پاییزی</h4>
                                     <p class="paragraph">نان برگر ، پنیر ، کاهو ، گوجه ، سبزی</p>
                                 </div>
-                                <p class="text-secondaryColor" >140,000 تومان</p>
+                                <p class="text-secondaryColor" >220,000 تومان</p>
                             </div>
                         </li>
                         <!-- 4 -->
@@ -254,7 +258,7 @@
                             </div>
                             <div class="pt-5" >
                                 <div class="mb-2" >
-                                    <h4 class="card__title">برگر متوسط</h4>
+                                    <h4 class="card__title">برگر وگان</h4>
                                     <p class="paragraph">نان برگر ، پنیر ، کاهو ، گوجه ، سبزی</p>
                                 </div>
                                 <p class="text-secondaryColor" >140,000 تومان</p>
@@ -341,11 +345,11 @@
                         <!-- bevetage -->
                         <li  class="item_wrap beverage" >
                             <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40 " >
-                                <img src="../img/beverage-1.png" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24" >
+                                <img src="../img/beverage-1.png" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-20 lg:w-24" >
                             </div>
                             <div class="pt-5" >
                                 <div class="mb-2" >
-                                    <h4 class="card__title">برگر متوسط</h4>
+                                    <h4 class="card__title">گریپ فروت</h4>
                                     <p class="paragraph">نان برگر ، پنیر ، کاهو ، گوجه ، سبزی</p>
                                 </div>
                                 <p class="text-secondaryColor" >140,000 تومان</p>
@@ -354,11 +358,11 @@
                         <!-- 1 -->
                         <li  class="item_wrap beverage" >
                             <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40 " >
-                                <img src="../img/beverage-1.png" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24" >
+                                <img src="../img/beverage-2.png" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-20 lg:w-24" >
                             </div>
                             <div class="pt-5" >
                                 <div class="mb-2" >
-                                    <h4 class="card__title">برگر متوسط</h4>
+                                    <h4 class="card__title">برگر بزرگ</h4>
                                     <p class="paragraph">نان برگر ، پنیر ، کاهو ، گوجه ، سبزی</p>
                                 </div>
                                 <p class="text-secondaryColor" >140,000 تومان</p>
@@ -367,7 +371,7 @@
                         <!-- 2 -->
                         <li  class="item_wrap beverage" >
                             <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40 " >
-                                <img src="../img/beverage-2.png" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24" >
+                                <img src="../img/beverage-3.png" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-20 lg:w-24" >
                             </div>
                             <div class="pt-5" >
                                 <div class="mb-2" >
@@ -380,7 +384,7 @@
                         <!-- 3 -->
                         <li  class="item_wrap beverage" >
                             <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40 " >
-                                <img src="../img/beverage-3.png" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24" >
+                                <img src="../img/beverage-4.png" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-20 lg:w-24" >
                             </div>
                             <div class="pt-5" >
                                 <div class="mb-2" >
@@ -393,20 +397,7 @@
                         <!-- 4 -->
                         <li  class="item_wrap beverage" >
                             <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40 " >
-                                <img src="../img/beverage-4.png" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24" >
-                            </div>
-                            <div class="pt-5" >
-                                <div class="mb-2" >
-                                    <h4 class="card__title">برگر متوسط</h4>
-                                    <p class="paragraph">نان برگر ، پنیر ، کاهو ، گوجه ، سبزی</p>
-                                </div>
-                                <p class="text-secondaryColor" >140,000 تومان</p>
-                            </div>
-                        </li>
-                        <!-- 5 -->
-                        <li  class="item_wrap beverage" >
-                            <div class="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40 " >
-                                <img src="../img/beverage-5.png" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24" >
+                                <img src="../img/beverage-5.png" alt="food image" class="w-40 hover:scale-110 ease-linear duration-200 md:w-20 lg:w-24" >
                             </div>
                             <div class="pt-5" >
                                 <div class="mb-2" >
@@ -420,9 +411,128 @@
                 </div>
             </div>
         </section>
+        <section id="review" class="bg-primaryColorLight py-20 "  >
+            <div class="container" >
+                <div class="max-w-md mx-auto text-center" ></div>
+                    <h2 class="section__title text-center mb-10" >نظرات مشتریان ما</h2>
+                    <div class="separator mx-auto "></div>
+                    <p class="paragraph mb-8 ">ibusdam repellendus beatae, molestias nulla architecto officia voluptas vitae. Dolore perferendis hic corporis.</p>
+                    
+                    <div class="swiper py-10 ">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6 " >
+                                    <p class="paragraph  ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt debitis ex ad quis rem, ducimus eveniet nostrum?</p>
+                                    <div class="flex items-center" >
+                                        <img src="../img/review-1.jpg" alt="review image" class="w-12 h-12 rounded-full" >
+                                        <div class="ml-2" >
+                                            <p class="font-oswald uppercase " > امین بروایه</p>
+                                            <p class="paragtaph" >مدیر عامل</p>
+                                        </div>
+                                        <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto " ></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 1 -->
+                            <li class="swiper-slide">
+                                <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6 " >
+                                    <p class="paragraph  ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt debitis ex ad quis rem, ducimus eveniet nostrum?</p>
+                                    <div class="flex items-center" >
+                                        <img src="../img/review-2.jpg" alt="review image" class="w-12 h-12 rounded-full" >
+                                        <div class="ml-2" >
+                                            <p class="font-oswald uppercase " > امین بروایه</p>
+                                            <p class="paragtaph" >مدیر عامل</p>
+                                        </div>
+                                        <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto " ></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 2 -->
+                            <li class="swiper-slide">
+                                <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6 " >
+                                    <p class="paragraph  ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt debitis ex ad quis rem, ducimus eveniet nostrum?</p>
+                                    <div class="flex items-center" >
+                                        <img src="../img/review-3.jpg" alt="review image" class="w-12 h-12 rounded-full" >
+                                        <div class="ml-2" >
+                                            <p class="font-oswald uppercase " >امین بروایه </p>
+                                            <p class="paragtaph" >مدیر عامل</p>
+                                        </div>
+                                        <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto " ></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 3 -->
+                            <li class="swiper-slide">
+                                <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6 " >
+                                    <p class="paragraph  ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt debitis ex ad quis rem, ducimus eveniet nostrum?</p>
+                                    <div class="flex items-center" >
+                                        <img src="../img/review-4.jpg" alt="review image" class="w-12 h-12 rounded-full" >
+                                        <div class="ml-2" >
+                                            <p class="font-oswald uppercase " >امین بروایه</p>
+                                            <p class="paragtaph" >مدیر عامل</p>
+                                        </div>
+                                        <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto " ></i>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- 4 -->
+                            <li class="swiper-slide">
+                                <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6 " >
+                                    <p class="paragraph  ">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt debitis ex ad quis rem, ducimus eveniet nostrum?</p>
+                                    <div class="flex items-center" >
+                                        <img src="../img/review-5.jpg" alt="review image" class="w-12 h-12 rounded-full" >
+                                        <div class="ml-2" >
+                                            <p class="font-oswald uppercase " > امین بروایه</p>
+                                            <p class="paragtaph" >مدیر عامل</p>
+                                        </div>
+                                        <i class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto " ></i>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
 
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            speed: 400,
+            spaceBetween: 30,
+            autoplay: {
+            delay: 3000,
+            disabaleOnInteraction:false
+            },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true
+  },
+  grabCursor:true,
+  
+  breakpoints: {
+    // when window width is >= 640px
+    320: {
+      slidesPerView: 1,
+    },
+    // when window width is >= 768px
+    480: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 1024px
+    640: {
+      slidesPerView: 3,
+    }
+  }
+
+});
+    </script>
+
     <script src="main.js" ></script>
 </body>
 </html>
