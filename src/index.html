@@ -6,15 +6,121 @@
     <link href="/dist/output.css"  rel="stylesheet" >
     <link rel="shortcut icon" href="/img/favicon.png" > 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <linkhref="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
     <title>پروژه تیلوین</title>
 </head>
 <body>
-    <header class="bg-primaryColor fixed top-0 left-0 w-full z-50 " >
-        <nav class="container bg-red-700 max-w-5xl mx-auto p-6 md:bg-blue-700  lg:bg-green-700 lg:text-4xl" >
-            <a href="#">خانه</a>
-            <a href="#">درباره ما</a>
+    <header class="bg-secondaryColor fixed top-0 left-0 w-full z-50 border-b-2 " >
+        <nav class="container relative h-14 flex justify-between items-center" >
+            <div>
+                <a href="#" class="text-xl uppercase font-oswald text-red-500 font-bold "  >
+                    فست فود<span class="text-primaryColor mr-2 ">مدرن </span>
+                </a>
+            </div>
+            
+            <div class="hidden absolute top-0 left-0 w-full py-14 bg-secondaryColor border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto " id="nav-menu" >
+                <ul dir="rtl" class="flex flex-col text-center gap-5 md:flex-row " >
+                    <li><a href="#home" class="nav__link hover:text-primaryColor ease-in duration-200 " >خانه</a></li>
+                    <li><a href="#about" class="nav__link hover:text-primaryColor ease-in duration-200 " >درباره ما</a></li>
+                    <li><a href="#menu" class="nav__link hover:text-primaryColor ease-in duration-200 " >منوی رستوران</a></li>
+                    <li><a href="#reviw" class="nav__link hover:text-primaryColor ease-in duration-200 " >خلاصه</a></li>
+                    <li><a href="#contact" class="nav__link hover:text-primaryColor ease-in duration-200 " >تماس با ما</a></li>
+                </ul>
+                <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden " id="nav-close"  >
+                    <i class="ri-close-line" ></i>
+                </div>
+            </div>
+            <div class="flex items-center gap-5 " >
+                <i class="ri-moon-line cursor-pointer ml-4 text-xl text-black" ></i>
+                <div class="md:hidden" id="hamburger" >
+                    <i class="ri-menu-2-line  cursor-pointer text-xl " ></i>
+                </div>
+            </div>
+        </div>
         </nav>
     </header>
+    <main>
+        <section id="home">
+            <div class="container flex flex-col items-center gap-10 md:flex-row md:basis-1/2 lg:basis-2/5" >
+                <div class="mx-auto md:basis-1/2 lg:basis-2/5 animate-pulse " >
+                    <img src="../img/home-image.png" alt="home image" class="w-60 md:w-full" >
+                </div>
+                <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5 " >
+                    <h1 class="home__title text-end " >برگر های خوشمزه مهمان شکم کنید</h1>
+                    <div class="sepatator mx-auto md:mx-0 " ></div>
+                    <p class="paragraph text-center " >Lorem ipsum dolor, sit amet consectetur
+                        adipisicing elit. Perspiciatis, soluta officiis sit inventore dolorum consectetur, in ullam hic eaque 
+                        corrupti vitae sunt eius porro iure saepe nihil facere temporibus fugiat.</p>
+                    <div class="text-base flex items-center  justify-center gap-4 py-10 md:justify-start md:gap-20 " >
+                        <div class="text-center " >
+                            <i class="fa-solid fa-utensils text-secondaryColor text-4xl " ></i>
+                            <br />
+                            خوشمزه
+                        </div>
+                        <div class="text-center " >
+                            <i class="fa-solid fa-droplet text-secondaryColor text-4xl " ></i>
+                            <br />
+                            تازه
+                        </div>
+                        <div class="text-center " >
+                            <i class="fa-brands fa-envira text-secondaryColor text-4xl " ></i>
+                            <br />
+                            ارگانیک
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary text-blackColor " >اطلاعات بیشتر</a>
+                </div>
+            </div>
+        </section>
+        <section id="categoty"  >
+            <div class="container flex flex-col gap-5 md:flex-row "dir="rtl" >
+                <!-- card 1 -->
+                <div class="bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1"dir="ltr" >
+                    <div class="basis-1/3 relative" >
+                        <img src="../img/burger-1.png" alt="category" class="absolute w-28 -bottom-4 -left-4" >
+                    </div>
+                    <div>
+                        <div class="mb-2" >
+                            <h4 class="card__title  " >فست فود</h4>
+                            <p class="text-xs text-black text-center " >انواع همبرگر و  ساندویچ رو از اینجا انتخاب میکنید</p>
+                        </div>
+                        <a href="#" class="text-black cursor-pointer" > buy online </a>
+                    </div>
+                </div>
+                  <!-- card 2 -->
+                <div class="bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1" dir="ltr">
+                    <div class="basis-1/3 relative" >
+                        <img src="../img/snack-1.png" alt="category" class="absolute w-28 -bottom-4 -left-4" >
+                    </div>
+                    <div>
+                        <div class="mb-2" >
+                            <h4 class="card__title" >اسنک</h4>
+                            <p class="text-xs text-black text-center " >loteasdfasdasdfasdfasdfasdffasdf asdfalajsdf als.</p>
+                        </div>
+                        <a href="#" class="text-secondaryColor cursor-pointer" > buy online </a>
+                    </div>
+                </div>
+                    <!-- card 3 -->
+                <div class="bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1" dir="ltr" >
+                    <div class="basis-1/3 relative  " >
+                        <img src="../img/beverage-2.png" alt="category" class="absolute w-28 -bottom-4 -left-4" >
+                    </div>
+                    <div>
+                        <div class="mb-2"  >
+                            <h4 class="card__title" >اب میوه</h4>
+                            <p class="text-xs text-black text-center " >lote asdfalajsasdfasdasdfdf als.سشیبشسیبشسیب</p>
+                        </div>
+                        <a href="#" class="text-secondaryColor  cursor-pointer" > buy online </a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+    </main>
+    <script src="main.js" ></script>
 </body>
 </html>
