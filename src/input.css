@@ -46,5 +46,8 @@
         @apply text-paragraphColor text-xs leading-5;
     }
 
-    
+}
+.tabs_warp ul li:hover,
+.tabs_warp ul li.active {
+    @apply bg-secondaryColor text-blackColor
 }
