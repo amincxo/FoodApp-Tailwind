@@ -30,11 +30,14 @@
     .nav__link {
         @apply text-black font-bold
     }
-    .home__title, .card__title {
+    .home__title, .card__title ,.section__title {
         @apply text-4xl font-oswald font-bold uppercase lg:text-6xl
     }
+    .section__title {
+        @apply text-3xl
+    }
     .card__title {
-        @apply text-xl font-bold text-black text-center
+        @apply text-xl font-bold  text-center
     }
     .sepatator {
         @apply w-28 h-[2px] bg-secondaryColor my-5;

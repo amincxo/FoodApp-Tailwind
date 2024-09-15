@@ -643,6 +643,10 @@ video {
   display: flex;
 }
 
+.grid{
+  display: grid;
+}
+
 .hidden{
   display: none;
 }
@@ -655,12 +659,24 @@ video {
   width: 7rem;
 }
 
+.w-40{
+  width: 10rem;
+}
+
 .w-60{
   width: 15rem;
 }
 
 .w-full{
   width: 100%;
+}
+
+.max-w-md{
+  max-width: 28rem;
+}
+
+.flex-1{
+  flex: 1 1 0%;
 }
 
 .basis-1\/3{
@@ -679,6 +695,10 @@ video {
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.grid-cols-2{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -709,6 +729,18 @@ video {
   gap: 1.25rem;
 }
 
+.space-y-2 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -735,6 +767,11 @@ video {
   background-color: rgb(0 121 54 / var(--tw-bg-opacity));
 }
 
+.bg-primaryColorLight{
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 13 120 / var(--tw-bg-opacity));
+}
+
 .bg-redColor{
   --tw-bg-opacity: 1;
   background-color: rgb(204 52 51 / var(--tw-bg-opacity));
@@ -743,6 +780,10 @@ video {
 .bg-secondaryColor{
   --tw-bg-opacity: 1;
   background-color: rgb(255 204 0 / var(--tw-bg-opacity));
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .py-10{
@@ -758,6 +799,15 @@ video {
 .py-3{
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.py-5{
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
 }
 
 .text-center{
@@ -805,6 +855,10 @@ video {
   text-transform: uppercase;
 }
 
+.leading-5{
+  line-height: 1.25rem;
+}
+
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -830,6 +884,16 @@ video {
   color: rgb(255 204 0 / var(--tw-text-opacity));
 }
 
+.text-wihteColor{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-paragraphColor{
+  --tw-text-opacity: 1;
+  color: rgb(192 192 192 / var(--tw-text-opacity));
+}
+
 .duration-200{
   transition-duration: 200ms;
 }
@@ -844,7 +908,7 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.home__title, .card__title{
+.home__title, .card__title ,.section__title{
   font-family: Oswald, sans-serif;
   font-size: 2.25rem;
   line-height: 2.5rem;
@@ -853,10 +917,15 @@ video {
 }
 
 @media (min-width: 1024px){
-  .home__title, .card__title{
+  .home__title, .card__title ,.section__title{
     font-size: 3.75rem;
     line-height: 1;
   }
+}
+
+.section__title{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .card__title{
@@ -864,8 +933,6 @@ video {
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 700;
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .sepatator{
@@ -932,6 +999,16 @@ video {
   }
 }
 
+@keyframes move{
+  50%{
+    transform: translateY(-1rem);
+  }
+}
+
+.hover\:animate-movingY:hover{
+  animation: move 2s linear infinite;
+}
+
 .hover\:text-primaryColor:hover{
   --tw-text-opacity: 1;
   color: rgb(1 10 94 / var(--tw-text-opacity));
@@ -947,12 +1024,21 @@ video {
     margin-right: 0px;
   }
 
+  .md\:mx-5{
+    margin-left: 1.25rem;
+    margin-right: 1.25rem;
+  }
+
   .md\:ml-auto{
     margin-left: auto;
   }
 
   .md\:block{
     display: block;
+  }
+
+  .md\:flex{
+    display: flex;
   }
 
   .md\:hidden{
@@ -979,8 +1065,20 @@ video {
     flex-direction: row;
   }
 
+  .md\:items-start{
+    align-items: flex-start;
+  }
+
+  .md\:items-center{
+    align-items: center;
+  }
+
   .md\:justify-start{
     justify-content: flex-start;
+  }
+
+  .md\:justify-around{
+    justify-content: space-around;
   }
 
   .md\:gap-20{
@@ -996,17 +1094,33 @@ video {
     padding-bottom: 0px;
   }
 
+  .md\:pt-0{
+    padding-top: 0px;
+  }
+
   .md\:text-start{
     text-align: start;
   }
 }
 
 @media (min-width: 1024px){
+  .lg\:flex-1{
+    flex: 1 1 0%;
+  }
+
   .lg\:basis-2\/5{
     flex-basis: 40%;
   }
 
   .lg\:basis-3\/5{
     flex-basis: 60%;
+  }
+
+  .lg\:flex-row{
+    flex-direction: row;
+  }
+
+  .lg\:gap-10{
+    gap: 2.5rem;
   }
 }

@@ -10,7 +10,7 @@ module.exports = {
     extend: {
         colors: {
             primaryColor: '#010a5e',
-            primaryColorLight:'#010a5e',
+            primaryColorLight:'#010d78',
             secondaryColor: '#FFCC00',
             paragraphColor:'#c0c0c0',
             wihteColor:'#fff',
