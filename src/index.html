@@ -24,7 +24,7 @@
             
             <div class="hidden absolute top-0 left-0 w-full py-14 dark:bg-darkColorLight bg-secondaryColor border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto " id="nav-menu" >
                 <ul dir="rtl" class="flex flex-col text-center gap-5 md:flex-row " >
-                    <li><a href="#home" class="nav__link dark:text-wihteColor  hover:text-primaryColor ease-in duration-200 " >خانه</a></li>
+                    <li><a href="#home" class="nav__link text-secondaryColor dark:text-wihteColor  hover:text-primaryColor ease-in duration-200 " >خانه</a></li>
                     <li><a href="#about" class="nav__link  dark:text-wihteColor  hover:text-primaryColor ease-in duration-200 " >درباره ما</a></li>
                     <li><a href="#menu" class="nav__link   dark:text-wihteColor hover:text-primaryColor ease-in duration-200 " >منوی رستوران</a></li>
                     <li><a href="#review" class="nav__link  dark:text-wihteColor hover:text-primaryColor ease-in duration-200 " >خلاصه</a></li>
@@ -47,9 +47,9 @@
         <section id="home">
             <div class="container flex flex-col items-center gap-10 md:flex-row md:basis-1/2 lg:basis-2/5" >
                 <div class="mx-auto md:basis-1/2 lg:basis-2/5 animate-pulse " >
-                    <img src="../img/home-image.png" alt="home image" class="w-60 md:w-full" >
+                    <img src="../img/home-image.png" alt="home image" class="w-60 md:w-full home__image " >
                 </div>
-                <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5 " >
+                <div class=" home__content text-center md:basis-1/2 md:text-start lg:basis-3/5 " >
                     <h1 class="home__title text-end " >برگر های خوشمزه مهمان شکم کنید</h1>
                     <div class="sepatator mx-auto md:mx-0 " ></div>
                     <p class="paragraph text-center " >Lorem ipsum dolor, sit amet consectetur
@@ -77,9 +77,9 @@
             </div>
         </section>
         <section id="categoty"  >
-            <div class="container flex flex-col gap-5 md:flex-row "dir="rtl" >
+            <div class="container categoty__card flex flex-col gap-5 md:flex-row "dir="rtl" >
                 <!-- card 1 -->
-                <div class="bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1"dir="ltr" >
+                <div class="categoty__card bg-secondaryColor flex py-3 rounded-lg overflow-hidden md:flex-1"dir="ltr" >
                     <div class="basis-1/3 relative" >
                         <img src="../img/burger-1.png" alt="category" class="absolute w-28 -bottom-4 -left-4" >
                     </div>
@@ -92,7 +92,7 @@
                     </div>
                 </div>
                   <!-- card 2 -->
-                <div class="bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1" dir="ltr">
+                <div class="categoty__card bg-redColor flex py-3 rounded-lg overflow-hidden md:flex-1" dir="ltr">
                     <div class="basis-1/3 relative" >
                         <img src="../img/snack-1.png" alt="category" class="absolute w-28 -bottom-4 -left-4" >
                     </div>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                     <!-- card 3 -->
-                <div class="bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1" dir="ltr" >
+                <div class="categoty__card bg-greenColor flex py-3 rounded-lg overflow-hidden md:flex-1" dir="ltr" >
                     <div class="basis-1/3 relative  " >
                         <img src="../img/beverage-2.png" alt="category" class="absolute w-28 -bottom-4 -left-4" >
                     </div>
@@ -121,7 +121,7 @@
             </div>
         </section>
         <section id="promo">
-            <div class="container flex flex-col gap-5 lg:gap-10 lg:flex-row " >
+            <div class=" promo__card-1 container flex flex-col gap-5 lg:gap-10 lg:flex-row " >
                 <!-- card 1 -->
                 <div class="bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-start md:justify-around lg:flex-row lg:flex-1 " >
                     <img src="../img/promo-1.png" alt="promo image" class="w-40 mx-auto hover:animate-movingY md:mx-5 " >
@@ -134,7 +134,7 @@
                 </div>
                 <!-- card 2 -->
 
-                <div class="bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center md:justify-around  lg:flex-row lg:flex-1 " >
+                <div class=" promo__card-2 bg-primaryColorLight dark:bg-darkColorLight flex flex-col p-5 rounded-lg md:flex-row md:items-center md:justify-around  lg:flex-row lg:flex-1 " >
                     <img src="../img/promo-2.png" alt="promo image" class="w-40 mx-auto hover:animate-movingY md:mx-5 " >
                     <div class="space-y-2 pt-5 md:pt-0 " dir="rtl" >
                         <p class="text-xs text-secondaryColor" >تخفیف روز</p>
@@ -157,10 +157,10 @@
         </section>
         <section id="about" > 
             <div class="container flex flex-col gap-10 md:flex-row " >
-                <div class="flex-1" >
+                <div class=" about__img flex-1" >
                     <img src="../img/about.jpg" alt="about image" class="rounded-lg" >
                 </div>
-                <div class="flex-1" dir="rtl" >
+                <div class=" about__content flex-1" dir="rtl" >
                 <h2 class="section__title" >در یا جا همه چیز های خوشمزه رو پیدا کنید</h2>
                     <div class="separotor"></div>
                     <p class="paragraph" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, blanditiis ex itaque repudiandae ipsam ut cumque ullam cum omnis fugiat pariatur aspernatur aperiam quibusdam eveniet aliquam sint corrupti quisquam debitis.</p>
@@ -197,7 +197,7 @@
                         </ul>
                     </div>
                 </div>
-                <div>
+                <div class="menu__items" >
                     <ul class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 lg:gap-12"  >
                         <!-- food 1-->
                         <li class="item_wrap food" >
@@ -412,7 +412,7 @@
             </div>
         </section>
         <section id="review" class="bg-primaryColorLight dark:bg-darkColorLight  py-20 "  >
-            <div class="container" >
+            <div class="customer__review  container" >
                 <div class="max-w-md mx-auto text-center" ></div>
                     <h2 class="section__title text-center mb-10" >نظرات مشتریان ما</h2>
                     <div class="separator mx-auto "></div>
@@ -619,6 +619,7 @@
 
 });
     </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="main.js" ></script>
 </body>
