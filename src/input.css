@@ -8,7 +8,7 @@
 
 @layer {
     body {
-        @apply text-wihteColor bg-primaryColor tracking-wider  ;
+        @apply text-wihteColor bg-primaryColor tracking-wider dark:bg-darkColor ;
 
     }
     
