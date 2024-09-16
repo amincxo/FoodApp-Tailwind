@@ -1211,14 +1211,14 @@ video {
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
 }
 
-.dark\:text-wihteColor:is(.dark *){
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .dark\:text-secondaryColor:is(.dark *){
   --tw-text-opacity: 1;
   color: rgb(255 204 0 / var(--tw-text-opacity));
+}
+
+.dark\:text-wihteColor:is(.dark *){
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .dark\:hover\:bg-secondaryColor:hover:is(.dark *){
