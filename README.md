@@ -1,4 +1,4 @@
-<h1>this food project using html and Tailwind </h1>
+<h1>food project using html and Tailwind </h1>
 
 <h2>this project completed</h2>
 
